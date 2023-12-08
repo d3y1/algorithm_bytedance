@@ -3,7 +3,7 @@ package middle;
 import java.util.Scanner;
 
 /**
- * ZJ4 附加题
+ * ZJ4 附加题(二阶魔方)
  * @author d3y1
  */
 public class ZJ4{

@@ -3,7 +3,7 @@ package middle;
 import java.util.Scanner;
 
 /**
- * ZJ2 编程题1
+ * ZJ2 编程题1(三支球队分数打平)
  * @author d3y1
  */
 public class ZJ2{

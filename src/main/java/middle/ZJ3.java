@@ -3,7 +3,7 @@ package middle;
 import java.util.Scanner;
 
 /**
- * ZJ3 编程题2
+ * ZJ3 编程题2(字符转换)
  * @author d3y1
  */
 public class ZJ3{

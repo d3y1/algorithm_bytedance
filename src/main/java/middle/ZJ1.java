@@ -3,7 +3,7 @@ package middle;
 import java.util.Scanner;
 
 /**
- * ZJ1 附加题
+ * ZJ1 附加题(房间传送门)
  * @author d3y1
  */
 public class ZJ1{

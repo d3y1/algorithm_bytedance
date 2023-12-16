@@ -3,7 +3,7 @@ package middle;
 import java.util.*;
 
 /**
- * ZJ10 编程题3
+ * ZJ10 编程题3(程序员需求选择)
  * @author d3y1
  */
 public class ZJ10{

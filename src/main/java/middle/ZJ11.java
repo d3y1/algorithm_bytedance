@@ -1,5 +1,6 @@
 package middle;
 
+import java.io.*;
 import java.util.*;
 
 /**
@@ -7,14 +8,45 @@ import java.util.*;
  * @author d3y1
  */
 public class ZJ11{
-    public static void main(String[] args){
-        Scanner in = new Scanner(System.in);
+//    public static void main(String[] args){
+//        Scanner in = new Scanner(System.in);
+//
+//        while(in.hasNext()){
+//            solution1(in);
+//            solution2(in);
+//            solution3(in);
+//        }
+//    }
 
-        while(in.hasNext()){
-            solution1(in);
-            solution2(in);
-            solution3(in);
+    /**
+     * 模拟法: BufferedReader+BufferedWriter -> 偶尔通过!
+     * @param args
+     * @throws IOException
+     */
+    public static void main(String[] args) throws IOException{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+        int N = Integer.parseInt(br.readLine());
+
+        int[][] points = new int[N][2];
+        for(int i=0; i<N; i++){
+            String[] point = br.readLine().trim().split(" ");
+            points[i][0] = Integer.parseInt(point[0]);
+            points[i][1] = Integer.parseInt(point[1]);
         }
+
+        Arrays.sort(points, (o1, o2) -> o2[1] - o1[1]);
+
+        int maxX = 0;
+        for(int i=0; i<N; i++){
+            if(points[i][0] >= maxX){
+                maxX = points[i][0];
+                bw.write(points[i][0]+" "+points[i][1]);
+                bw.newLine();
+            }
+        }
+        bw.flush();
     }
 
     /**
